@@ -1,0 +1,289 @@
+<html><head><base href="https://pantufasm%C3%A1gicas.com/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peluche & Amor - Bichinhos de Pelúcia Fofos e Aconchegantes</title>
+<style>
+  :root {
+    --primary-color: #8A2BE2;
+    --secondary-color: #E6E6FA;
+    --accent-color: #FFC0CB;
+    --text-color: #4B0082;
+    --background-color: #F8F8FF;
+  }
+
+  body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .logo {
+    font-size: 2.5em;
+    font-weight: 700;
+    font-family: 'Pacifico', cursive;
+  }
+
+  nav {
+    background-color: var(--secondary-color);
+    padding: 0.5em;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 0 1em;
+  }
+
+  nav ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: var(--accent-color);
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 1em;
+  }
+
+  .banner {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .banner-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .banner-slide.active {
+    opacity: 1;
+  }
+
+  .banner-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .banner-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(138, 43, 226, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .featured-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    margin-top: 2em;
+  }
+
+  .product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .product-info {
+    padding: 1em;
+  }
+
+  .product-title {
+    font-size: 1.2em;
+    margin: 0;
+    color: var(--primary-color);
+  }
+
+  .product-price {
+    font-weight: bold;
+    color: var(--accent-color);
+    margin: 0.5em 0;
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: var(--accent-color);
+  }
+
+  footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+  }
+
+  @media (max-width: 768px) {
+    .featured-products {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">Peluche & Amor</div>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="/">Início</a></li>
+      <li><a href="/produtos">Produtos</a></li>
+      <li><a href="/sobre">Sobre Nós</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="banner">
+      <div class="banner-slide active">
+        <img src="https://example.com/banner1.jpg" alt="Urso roxo fofo sentado em uma poltrona" width="1200" height="400">
+        <div class="banner-text">
+          <h2>Bem-vindo ao Mundo da Fofura!</h2>
+          <p>Descubra nossos bichinhos de pelúcia adoráveis</p>
+        </div>
+      </div>
+      <div class="banner-slide">
+        <img src="https://example.com/banner2.jpg" alt="Coelho lilás deitado em uma cama de flores" width="1200" height="400">
+        <div class="banner-text">
+          <h2>Novos Amigos Chegaram!</h2>
+          <p>Conheça nossa coleção primavera</p>
+        </div>
+      </div>
+      <div class="banner-slide">
+        <img src="https://example.com/banner3.jpg" alt="Girafa de pelúcia roxa em um cenário de safari" width="1200" height="400">
+        <div class="banner-text">
+          <h2>Aventuras Fofas</h2>
+          <p>Explore nossa linha de bichinhos selvagens</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Produtos em Destaque</h2>
+    <div class="featured-products">
+      <div class="product-card">
+        <img src="https://example.com/product1.jpg" alt="Urso Roxo Carinhoso sentado com laço rosa" width="250" height="200">
+        <div class="product-info">
+          <h3 class="product-title">Urso Roxo Carinhoso</h3>
+          <p class="product-price">R$ 89,90</p>
+          <a href="/produtos/urso-roxo-carinhoso" class="btn">Ver Detalhes</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://example.com/product2.jpg" alt="Coelho Lilás Aconchegante com orelhas longas" width="250" height="200">
+        <div class="product-info">
+          <h3 class="product-title">Coelho Lilás Aconchegante</h3>
+          <p class="product-price">R$ 74,90</p>
+          <a href="/produtos/coelho-lilas-aconchegante" class="btn">Ver Detalhes</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://example.com/product3.jpg" alt="Elefante Lavanda Fofo com tromba enrolada" width="250" height="200">
+        <div class="product-info">
+          <h3 class="product-title">Elefante Lavanda Fofo</h3>
+          <p class="product-price">R$ 99,90</p>
+          <a href="/produtos/elefante-lavanda-fofo" class="btn">Ver Detalhes</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://example.com/product4.jpg" alt="Unicórnio Mágico Roxo com crina colorida" width="250" height="200">
+        <div class="product-info">
+          <h3 class="product-title">Unicórnio Mágico Roxo</h3>
+          <p class="product-price">R$ 109,90</p>
+          <a href="/produtos/unicornio-magico-roxo" class="btn">Ver Detalhes</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Peluche & Amor. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Banner rotativo
+    const slides = document.querySelectorAll('.banner-slide');
+    let currentSlide = 0;
+
+    function showSlide(n) {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (n + slides.length) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+
+    setInterval(nextSlide, 5000); // Muda o slide a cada 5 segundos
+
+    // Animação suave ao rolar
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
